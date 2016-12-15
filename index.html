@@ -7,6 +7,7 @@
 	<meta charset="UTF-8"/>
 	<title>Le Rallye contre attaque</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 
 <body>
@@ -27,13 +28,40 @@
 	</nav>
 
 	<section>
-		<p>compteur JS</p>
+		<p class="counter">Dans :
+			<span class="d"></span> jours,
+			<span class="h"></span> heures,
+			<span class="m"></span> minutes et
+			<span class="s"></span> secondes !
+		</p>
+		<script>
+			var target = new Date(2017, 0, 3, 0, 0, 0, 0);
+			function tick() {
+				var now = new Date();
+				var diff = Math.floor((target.getTime() - now.getTime())/1000);
+
+				var seconds = diff % 60;
+				var minutes = Math.floor(diff%3600 / 60);
+				var hours = Math.floor(diff%86400 / 3600);
+				var days = Math.floor(diff / (60 * 60 * 24));
+
+				$('.counter .d').html(days);
+				$('.counter .h').html(hours<10?"0"+hours:hours);
+				$('.counter .m').html(minutes<10?"0"+minutes:minutes);
+				$('.counter .s').html(seconds<10?"0"+seconds:seconds);
+			}
+
+			$(document).ready(function() {
+				window.setInterval(tick, 1000);
+				tick();
+			});
+		</script>
 	</section>
 
 	<section>
 		<article>
 			<p>text présentation</p>
-		</article>	
+		</article>
 
 		<article>
 			<p>player YT</p>

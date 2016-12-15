@@ -1,0 +1,23 @@
+body {
+  font-family: cambria, sans-serif;
+  background-color: rgb(39,40,34);
+}
+
+nav {
+  display: inline-block;
+  background-color: rgb(185,17,17);
+}
+
+ul {
+  display: inline-block;
+}
+
+li {
+  list-style-type: none;
+}
+
+footer {
+  width: auto;
+  padding: 0px;
+  background-color: rgb(39,40,34);
+}

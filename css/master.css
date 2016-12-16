@@ -1,0 +1,54 @@
+body {
+  font-family: cambria, sans-serif;
+  background-color: rgb(39,40,34);
+  margin: 0px;
+}
+
+header img {
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+
+nav {
+  display: inline-block;
+  background-color: rgb(185,17,17);
+}
+
+ul {
+  display: inline-block;
+}
+
+li {
+  list-style-type: none;
+}
+
+.countdown_body {
+  font-size: 2.5em;
+  font-weight: bolder;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+article iframe {
+  display: block;
+  margin: auto;
+}
+
+footer {
+  width: auto;
+  padding: 0px;
+  background-color: black;
+  padding-top : 5px;
+  margin-top: 30px;
+  padding-bottom: 5px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+/*Fond noir ecriture blanche footer
+
+séparation catégories comme gorafi*/

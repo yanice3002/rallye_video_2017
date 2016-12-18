@@ -60,6 +60,15 @@ header img {
   color : rgb(185,17,17);
 }
 
+#menutitre {
+  position: absolute;
+  top: 42%;
+  color: white;
+  font-variant: small-caps;
+  transform:rotateZ(90deg);
+  font-size: 1.5em;
+}
+
 nav > ul {
   display: inline-block;
   animation-name: menuulclose;

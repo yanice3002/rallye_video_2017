@@ -58,6 +58,11 @@ li a:hover {
   width: 100%;
 }
 
+.floating {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 article p {
   text-align: center;
 }
@@ -65,6 +70,10 @@ article p {
 article iframe {
   display: block;
   margin: auto;
+}
+
+.bigger {
+  font-size: 1.5em;
 }
 
 footer {

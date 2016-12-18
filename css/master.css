@@ -9,7 +9,27 @@ nav {
   position: absolute;
   top: 30%;
   background-color: rgb(185,17,17);
-  width: 15%;
+  animation-name: menuclose;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu {
+    0%   {width: 5%;}
+    100% {width: 15%;}
+}
+
+@keyframes menuclose {
+    0%   {width: 15%;}
+    100% {width: 5%;}
+}
+
+nav:hover {
+  animation-name: menu;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 div {
@@ -24,6 +44,11 @@ header img {
 
 ul {
   display: inline-block;
+  opacity: 0;
+}
+
+ul:hover {
+  opacity: 1;
 }
 
 li {

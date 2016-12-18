@@ -60,13 +60,34 @@ header img {
   color : rgb(185,17,17);
 }
 
-#menutitre {
+@keyframes menutitleopen {
+    0%   {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes menutitleclose {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+nav > #menutitre {
   position: absolute;
   top: 42%;
   color: white;
   font-variant: small-caps;
   transform:rotateZ(90deg);
   font-size: 1.5em;
+  animation-name: menutitleclose;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+nav:hover > #menutitre {
+  animation-name: menutitleopen;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 nav > ul {

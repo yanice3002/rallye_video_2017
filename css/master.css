@@ -42,13 +42,29 @@ header img {
   margin: auto;
 }
 
-ul {
-  display: inline-block;
-  opacity: 0;
+@keyframes menuul {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
 }
 
-ul:hover {
-  opacity: 1;
+@keyframes menuulclose {
+    0%   {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+nav > ul {
+  display: inline-block;
+  animation-name: menuulclose;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+nav:hover > ul {
+  animation-name: menuul;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 li {

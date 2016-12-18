@@ -49,6 +49,15 @@ li a:hover {
   font-variant: small-caps;
 }
 
+.team {
+  width: 60%;
+  margin: auto;
+}
+
+.team .row {
+  width: 100%;
+}
+
 article p {
   text-align: center;
 }

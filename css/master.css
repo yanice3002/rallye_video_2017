@@ -52,6 +52,14 @@ header img {
     100% {opacity: 0;}
 }
 
+.sn {
+  color: #333131;
+}
+
+.sn:hover {
+  color : rgb(185,17,17);
+}
+
 nav > ul {
   display: inline-block;
   animation-name: menuulclose;
@@ -135,7 +143,3 @@ footer p {
   color: white;
   text-align: center;
 }
-
-/*Fond noir ecriture blanche footer
-
-séparation catégories comme gorafi*/

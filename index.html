@@ -17,16 +17,21 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Font awesome CDN-->
+	<script src="https://use.fontawesome.com/0b1fc2e99b.js"></script>
 </head>
 
 <body>
 	<header>
-		<img src="img/logo.png" alt="Le rallye contre-attaque !">
+		<img src="img/logo.png" alt="Le rallye contre attaque !">
 	</header>
+
+	<br>
 
 	<nav>
 		<ul>
-			<li><a href="home.html">HOME</a></li>
+			<li><a href="index.html">HOME</a></li>
 			<li><a href="rallye.html">Le Rallye</a></li>
 			<li><a href="inscription.html">Inscription</a></li>
 			<li><a href="jury.html">Jury</a></li>
@@ -36,7 +41,7 @@
 		</ul>
 	</nav>
 
-	<section class="countdown_body">
+	<section class="bold_announcement">
 		<p class="counter">Dans :
 			<span class="d"></span> jours,
 			<span class="h"></span> heures,
@@ -44,7 +49,7 @@
 			<span class="s"></span> secondes !
 		</p>
 		<script>
-			var target = new Date(2017, 0, 3, 0, 0, 0, 0);
+			var target = new Date(2017, 0, 11, 0, 0, 0, 0);
 			function tick() {
 				var now = new Date();
 				var diff = Math.floor((target.getTime() - now.getTime())/1000);
@@ -67,15 +72,20 @@
 		</script>
 	</section>
 
+	<br>
+
 	<section>
 		<article>
-			<p></p>
+			<p><i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i> &emsp; <i class="fa fa-twitter fa-5x" aria-hidden="true"></i> &emsp; <i class="fa fa-instagram fa-5x" aria-hidden="true"></i> &emsp; <i class="fa fa-youtube-play fa-5x" aria-hidden="true"></i></p>
 		</article>
 
+		<br>
+
 		<article>
-			<iframe width="1280" height="720" src="https://www.youtube.com/embed/98YoGbCjr7M" frameborder="0" allowfullscreen></iframe>
+			<iframe width="1000" height="600" src="https://www.youtube.com/embed/98YoGbCjr7M" frameborder="0" allowfullscreen></iframe>
 		</article>
-	</section>
+	</section>*
+
 
 	<footer>
 		<p>IUT chambery MMI1</p>

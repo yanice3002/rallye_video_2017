@@ -76,8 +76,13 @@ article iframe {
   font-size: 1.5em;
 }
 
+.alwaysbottom {
+  position: fixed;
+  bottom: 0px;
+}
+
 footer {
-  width: auto;
+  width: 100%;
   padding: 0px;
   background-color: black;
   padding-top : 5px;

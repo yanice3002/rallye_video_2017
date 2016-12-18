@@ -4,15 +4,22 @@ body {
   margin: 0px;
 }
 
+nav {
+  display: block;
+  position: absolute;
+  top: 30%;
+  background-color: rgb(185,17,17);
+  width: 15%;
+}
+
+div {
+  width: 70%;
+}
+
 header img {
   height: 200px;
   display: block;
   margin: auto;
-}
-
-nav {
-  display: inline-block;
-  background-color: rgb(185,17,17);
 }
 
 ul {
@@ -21,13 +28,29 @@ ul {
 
 li {
   list-style-type: none;
+  padding: 10px;
 }
 
-.countdown_body {
+li a {
+  color: white;
+  padding: 10px;
+}
+
+li a:hover {
+    text-decoration: none;
+    color: rgb(185,17,17);
+    background-color: white;
+}
+
+.bold_announcement {
   font-size: 2.5em;
   font-weight: bolder;
   text-align: center;
   font-variant: small-caps;
+}
+
+article p {
+  text-align: center;
 }
 
 article iframe {

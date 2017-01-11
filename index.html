@@ -43,14 +43,19 @@
 	</nav>
 
 	<section class="bold_announcement">
-		<p class="counter">Dans :
+		<!--<p class="counter">Le rallye est terminé depuis
 			<span class="d"></span> jours,
 			<span class="h"></span> heures,
 			<span class="m"></span> minutes et
-			<span class="s"></span> secondes !
+			<span class="s"></span> secondes ! <br> Merci à toutes les équipes ! - (now.getTime() + target.getTime())/1000
+		</p>-->
+		<p class="counter">Il reste
+			<span class="h"></span> heures,
+			<span class="m"></span> minutes et
+			<span class="s"></span> secondes <br> pour plancher sur votre vidéo !
 		</p>
 		<script>
-			var target = new Date(2017, 0, 11, 18, 0, 0, 0);
+			var target = new Date(2017, 0, 12, 18, 0, 0, 0);
 			function tick() {
 				var now = new Date();
 				var diff = Math.floor((target.getTime() - now.getTime())/1000);

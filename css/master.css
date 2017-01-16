@@ -179,9 +179,9 @@ footer p {
   height: 200px;
 }
 .p_partenaire{
-  style="text-align: left;
+  text-align: left;
 }
 
 .a_partenaire{
-  class="floating" style="width: 60%;
+  width: 60%;
 }
